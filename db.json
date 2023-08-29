@@ -1,5 +1,54 @@
 {
-  "users": [ { "name": "Mia" }],
+  "users": [
+    {
+      "id": 1,
+      "name": "Mia"
+    },
+    {
+      "name": "Barbara Will-Koelpin",
+      "id": 2
+    },
+    {
+      "name": "Pamela Renner V",
+      "id": 3
+    },
+    {
+      "name": "Janis Botsford",
+      "id": 4
+    },
+    {
+      "name": "Rodney Abernathy",
+      "id": 5
+    },
+    {
+      "name": "Madeline Legros MD",
+      "id": 6
+    },
+    {
+      "name": "Kristy Langworth",
+      "id": 7
+    },
+    {
+      "name": "Mrs. Gretchen Terry-Stracke",
+      "id": 8
+    },
+    {
+      "name": "Oscar Dare",
+      "id": 9
+    },
+    {
+      "name": "Benny Schaden",
+      "id": 10
+    },
+    {
+      "name": "Rene Schiller",
+      "id": 11
+    },
+    {
+      "name": "Mr. Tom McCullough",
+      "id": 12
+    }
+  ],
   "albums": [],
   "photos": []
 }
