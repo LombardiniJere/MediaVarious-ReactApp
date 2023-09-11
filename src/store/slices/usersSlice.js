@@ -41,7 +41,10 @@ const usersSlice = createSlice({
     });
     builder.addCase(removeUser.fulfilled, (state, action) => {
       state.isLoading = false;
-
+    // devolvemos la lista de users que no sean iguales al que borramos
+      state.data = state.data.filter((user) => {
+        return user.id !== action.payload.id;
+      });
     });
     builder.addCase(removeUser.rejected, (state, action) => {
       state.isLoading = false;

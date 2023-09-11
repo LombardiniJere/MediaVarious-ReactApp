@@ -1,36 +1,12 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "Mia"
+      "name": "Carl Donnelly",
+      "id": 1
     },
     {
-      "name": "Estelle Schaden IV",
+      "name": "Alexander Gottlieb PhD",
       "id": 2
-    },
-    {
-      "name": "Pablo Runolfsson",
-      "id": 3
-    },
-    {
-      "name": "Marguerite Schmidt",
-      "id": 4
-    },
-    {
-      "name": "Leroy Dickens",
-      "id": 5
-    },
-    {
-      "name": "Harriet Nicolas-Larkin",
-      "id": 6
-    },
-    {
-      "name": "Cecil Hagenes",
-      "id": 7
-    },
-    {
-      "name": "Gail Towne",
-      "id": 8
     }
   ],
   "albums": [],
