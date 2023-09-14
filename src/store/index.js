@@ -6,12 +6,15 @@ import { albumsApi } from "./apis/albumsApi";
 export const store = configureStore({
   reducer: {
     users: usersReducer,
-    [albumsApi.reducerPath]: albumsApi.reducer,
+    [albumsApi.reducerPath]: albumsApi.reducer
+  },
+  middleware: (getDefaultMiddleware) => {
+    return getDefaultMiddleware().concat(albumsApi.middleware);
   },
 });
 
 setupListeners(store.dispatch);
 
-export { useFetchAlbumsQuery } from "./apis/albumsApi";
+export { useFetchAlbumsQuery, useAddAlbumMutation } from "./apis/albumsApi";
 export * from './thunks/fetchUsers';
 export * from './thunks/addUser';

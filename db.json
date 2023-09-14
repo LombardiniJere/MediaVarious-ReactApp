@@ -1,19 +1,34 @@
 {
   "users": [
     {
-      "name": "Carl Donnelly",
-      "id": 1
+      "name": "Kate Abshire",
+      "id": 6
     },
     {
-      "name": "Lindsay Kohler",
-      "id": 4
+      "name": "Gerald Gislason",
+      "id": 8
+    },
+    {
+      "name": "Gilberto Rosenbaum",
+      "id": 9
     }
   ],
   "albums": [
     {
-      "id": 10,
-      "title": "Mountain hiking",
-      "userId": 1
+      "title": "Rustic Soft Chips",
+      "id": 1
+    },
+    {
+      "title": "Ergonomic Frozen Pants",
+      "id": 2
+    },
+    {
+      "title": "Modern Concrete Sausages",
+      "id": 3
+    },
+    {
+      "title": "Electronic Granite Computer",
+      "id": 4
     }
   ],
   "photos": []
