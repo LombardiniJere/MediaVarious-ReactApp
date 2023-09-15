@@ -8,6 +8,17 @@ const  albumsApi = createApi({
   }),
   endpoints(builder) {
     return {
+      deleteAlbum: builder.mutation({
+        invalidatesTags: (album) => {
+          return [{ type: ''}]
+        },
+        query: (album) => {
+          return {
+            url: `albums/${album.id}`,
+            method: 'DELETE',
+          };
+        }
+      }),
       addAlbum: builder.mutation({
         invalidatesTags: (user) => {
           return [{ type: 'Album', id: user.id }]
@@ -19,7 +30,7 @@ const  albumsApi = createApi({
             body: {
               userId: user.id,
               title: faker.commerce.productName()
-            }
+            },
           };
         }
       }),
@@ -41,5 +52,5 @@ const  albumsApi = createApi({
   },
 });
 
-export const { useFetchAlbumsQuery, useAddAlbumMutation } = albumsApi;
+export const { useFetchAlbumsQuery, useAddAlbumMutation, useDeleteAlbumMutation } = albumsApi;
 export { albumsApi };

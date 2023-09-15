@@ -1,16 +1,16 @@
 {
   "users": [
     {
-      "name": "Kate Abshire",
-      "id": 6
+      "name": "Dr. Toni Sauer",
+      "id": 1
     },
     {
-      "name": "Gerald Gislason",
-      "id": 8
+      "name": "Charlene Koelpin",
+      "id": 2
     },
     {
-      "name": "Gilberto Rosenbaum",
-      "id": 9
+      "name": "Kristy Bashirian",
+      "id": 3
     }
   ],
   "albums": [
@@ -21,14 +21,6 @@
     {
       "title": "Ergonomic Frozen Pants",
       "id": 2
-    },
-    {
-      "title": "Modern Concrete Sausages",
-      "id": 3
-    },
-    {
-      "title": "Electronic Granite Computer",
-      "id": 4
     }
   ],
   "photos": []
