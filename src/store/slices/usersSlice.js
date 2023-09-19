@@ -1,17 +1,16 @@
-import { createSlice } from "@reduxjs/toolkit";
-import { fetchUsers } from "../thunks/fetchUsers";
-import { addUser } from "../thunks/addUser";
-import { removeUser } from "../thunks/removeUser";
+import { createSlice } from '@reduxjs/toolkit';
+import { fetchUsers } from '../thunks/fetchUsers';
+import { addUser } from '../thunks/addUser';
+import { removeUser } from '../thunks/removeUser';
 
 const usersSlice = createSlice({
   name: 'users',
   initialState: {
+    isLoading: false,
     data: [],
+    error: null,
   },
-  // pending, fullfilled, rejected are the 3 states of async functions redux.
-  // payload: fetchUsers object.
   extraReducers(builder) {
-    // FETCH USERS
     builder.addCase(fetchUsers.pending, (state, action) => {
       state.isLoading = true;
     });
@@ -23,7 +22,7 @@ const usersSlice = createSlice({
       state.isLoading = false;
       state.error = action.error;
     });
-    // ADD USER
+
     builder.addCase(addUser.pending, (state, action) => {
       state.isLoading = true;
     });
@@ -35,13 +34,12 @@ const usersSlice = createSlice({
       state.isLoading = false;
       state.error = action.error;
     });
-    // DELETE USER
+
     builder.addCase(removeUser.pending, (state, action) => {
       state.isLoading = true;
     });
     builder.addCase(removeUser.fulfilled, (state, action) => {
       state.isLoading = false;
-    // devolvemos la lista de users que no sean iguales al que borramos
       state.data = state.data.filter((user) => {
         return user.id !== action.payload.id;
       });

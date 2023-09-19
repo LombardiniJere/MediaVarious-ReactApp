@@ -1,35 +1,49 @@
 {
   "users": [
     {
-      "name": "Kate Abshire",
-      "id": 6
+      "id": 1,
+      "name": "Myra"
     },
     {
-      "name": "Gerald Gislason",
-      "id": 8
+      "name": "Elsie Price",
+      "id": 3
     },
     {
-      "name": "Gilberto Rosenbaum",
-      "id": 9
+      "name": "Harold Strosin",
+      "id": 4
+    },
+    {
+      "name": "Mr. Juana King",
+      "id": 5
     }
   ],
   "albums": [
     {
-      "title": "Rustic Soft Chips",
+      "userId": 1,
+      "title": "Practical Steel Mouse",
+      "id": 15
+    },
+    {
+      "userId": 1,
+      "title": "Oriental Rubber Chair",
+      "id": 16
+    }
+  ],
+  "photos": [
+    {
+      "albumId": 15,
+      "url": "https://loremflickr.com/150/150/abstract?lock=30160",
       "id": 1
     },
     {
-      "title": "Ergonomic Frozen Pants",
-      "id": 2
-    },
-    {
-      "title": "Modern Concrete Sausages",
-      "id": 3
-    },
-    {
-      "title": "Electronic Granite Computer",
+      "albumId": 15,
+      "url": "https://loremflickr.com/150/150/abstract?lock=57911",
       "id": 4
+    },
+    {
+      "albumId": 15,
+      "url": "https://loremflickr.com/150/150/abstract?lock=16350",
+      "id": 5
     }
-  ],
-  "photos": []
+  ]
 }
