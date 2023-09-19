@@ -1,15 +1,14 @@
 import { useFetchAlbumsQuery, useAddAlbumMutation } from "../store";
-import ExpandablePanel from "../components/ExpandablePanel";
 import Skeleton from "../components/Skeleton";
 import Button from "../components/Button";
 import AlbumListItem from "./AlbumListItem";
 
-function AlbumList(user) {
-  const { data, error, isLoading } = useFetchAlbumsQuery(user);
-  const [addAlbum, results ] = useAddAlbumMutation();
+function AlbumList ({ user }) {
+  const { data, error, isFetching } = useFetchAlbumsQuery(user);
+  const [ addAlbum ] = useAddAlbumMutation();
 
   let content;
-  if (isLoading) {
+  if (isFetching) {
     content = <Skeleton className="h-10 w-full" times={3} />
   } else if (error) {
     content = <div>Error loading albums.</div>
@@ -27,7 +26,7 @@ function AlbumList(user) {
     <div>
       <div className="m-2 flex flex-row items-center justify-between">
         <h3 className="text-lg font-bold"> Albums for {user.name} </h3>
-        <Button loading={isLoading} onClick={handlerAddAlbum}>
+        <Button loading={isFetching} onClick={handlerAddAlbum}>
           + Add Albmu
         </Button>
       </div>

@@ -1,26 +1,34 @@
 {
   "users": [
     {
-      "name": "Dr. Toni Sauer",
+      "name": "Willie O'Hara",
       "id": 1
     },
     {
-      "name": "Charlene Koelpin",
+      "name": "Darnell Nader",
       "id": 2
-    },
-    {
-      "name": "Kristy Bashirian",
-      "id": 3
     }
   ],
   "albums": [
     {
-      "title": "Rustic Soft Chips",
-      "id": 1
+      "title": "Ergonomic Soft Hat",
+      "id": 19
     },
     {
-      "title": "Ergonomic Frozen Pants",
-      "id": 2
+      "title": "Elegant Concrete Bike",
+      "id": 23
+    },
+    {
+      "title": "Practical Plastic Bacon",
+      "id": 24
+    },
+    {
+      "title": "Bespoke Rubber Cheese",
+      "id": 25
+    },
+    {
+      "title": "Sleek Soft Sausages",
+      "id": 26
     }
   ],
   "photos": []
