@@ -17,7 +17,6 @@ You may also see any lint errors in the console.
 ### `npm run start:server`
 
 Runs the DB app.\
-Open [http://localhost:3005](http://localhost:3005) to view it in your browser.
 
 ### `npm test`
 
