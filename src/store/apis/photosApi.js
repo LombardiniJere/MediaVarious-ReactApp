@@ -28,7 +28,7 @@ const photosApi = createApi({
       }),
       addPhoto: builder.mutation({
         invalidatesTags: (result, error, album) => {
-          return [{ type: 'AlbumPhoto', id: album.id }];  // returning an array
+          return [{ type: 'AlbumPhoto', id: album.id }];
         },
         query: (album) => {
           return {
@@ -36,14 +36,14 @@ const photosApi = createApi({
             url: '/photos',
             body: {
               albumId: album.id,
-              url: faker.image.urlLoremFlickr(150, 150)
+              url: faker.image.abstract(150, 150, true),
             },
           };
         },
       }),
-      deletePhoto: builder.mutation({
+      removePhoto: builder.mutation({
         invalidatesTags: (result, error, photo) => {
-          return [{ type: 'Photo', id: photo.id  }];
+          return [{ type: 'Photo', id: photo.id }];
         },
         query: (photo) => {
           return {
@@ -56,5 +56,9 @@ const photosApi = createApi({
   },
 });
 
-export const { useFetchPhotosQuery, useAddPhotoMutation, useDeletePhotoMutation } = photosApi;
+export const {
+  useFetchPhotosQuery,
+  useAddPhotoMutation,
+  useRemovePhotoMutation,
+} = photosApi;
 export { photosApi };

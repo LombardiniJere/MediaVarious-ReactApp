@@ -1,35 +1,49 @@
 {
   "users": [
     {
-      "name": "Willie O'Hara",
-      "id": 1
+      "id": 1,
+      "name": "Myra"
     },
     {
-      "name": "Darnell Nader",
-      "id": 2
+      "name": "Elsie Price",
+      "id": 3
+    },
+    {
+      "name": "Harold Strosin",
+      "id": 4
+    },
+    {
+      "name": "Mr. Juana King",
+      "id": 5
     }
   ],
   "albums": [
     {
-      "title": "Ergonomic Soft Hat",
-      "id": 19
+      "userId": 1,
+      "title": "Practical Steel Mouse",
+      "id": 15
     },
     {
-      "title": "Elegant Concrete Bike",
-      "id": 23
-    },
-    {
-      "title": "Practical Plastic Bacon",
-      "id": 24
-    },
-    {
-      "title": "Bespoke Rubber Cheese",
-      "id": 25
-    },
-    {
-      "title": "Sleek Soft Sausages",
-      "id": 26
+      "userId": 1,
+      "title": "Oriental Rubber Chair",
+      "id": 16
     }
   ],
-  "photos": []
+  "photos": [
+    {
+      "albumId": 15,
+      "url": "https://loremflickr.com/150/150/abstract?lock=30160",
+      "id": 1
+    },
+    {
+      "albumId": 15,
+      "url": "https://loremflickr.com/150/150/abstract?lock=57911",
+      "id": 4
+    },
+    {
+      "albumId": 15,
+      "url": "https://loremflickr.com/150/150/abstract?lock=16350",
+      "id": 5
+    }
+  ]
 }
